@@ -4,8 +4,7 @@
 
 An experimental text adventure that blends traditional parser-based gameplay with evolving mechanics—ritual phrases, cipher puzzles, and symbolic patterns—all presented within a beautifully crafted grimoire interface.
 
-![Game Screenshot - <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b4ac573d-87a9-45cb-b11f-3cbda50a7d6e" />
-]
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b4ac573d-87a9-45cb-b11f-3cbda50a7d6e" />
 
 ## 🎮 About
 

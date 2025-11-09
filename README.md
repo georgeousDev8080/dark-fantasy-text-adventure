@@ -223,7 +223,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Links
 
 - **Live Demo:** [Play Now]([https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/74ed0fd8ebd3ecf3c65ac43afe56bd3f/8e4aa0f1-15b7-4389-a6fb-f74fb022b9a0/index.html](https://georgeousdev8080.github.io/dark-fantasy-text-adventure/))
-- **Portfolio:** [georgeousDev](https://www.linkedin.com/in/george-gararizos-0392b52aa/)
+- **LinkedIn:** [georgeousDev](https://www.linkedin.com/in/george-gararizos-0392b52aa/)
 - **Report Issues:** [GitHub Issues](#)
 
 ***

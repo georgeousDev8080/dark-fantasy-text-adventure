@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grimoire of Eternal Vigil - A Dark Fantasy Text Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background monastery image -->
+    <div class="background-layer"></div>
+    
+    <!-- Candlelight effect -->
+    <div class="candle-glow"></div>
+    
+    <!-- Main tome container -->
+    <div class="tome-container">
+        <!-- Left book cover -->
+        <div class="book-cover book-cover-left"></div>
+        
+        <!-- Book pages -->
+        <div class="book-pages">
+            <!-- Left page (inventory & status) -->
+            <div class="page page-left">
+                <div class="page-content">
+                    <h2 class="page-title">Your Possessions</h2>
+                    <div id="inventory-display" class="inventory-list">
+                        <p class="empty-inventory">Your hands are empty.</p>
+                    </div>
+                    
+                    <div class="status-info">
+                        <h3>Location</h3>
+                        <p id="location-display">The Scriptorium</p>
+                        
+                        <h3>Progress</h3>
+                        <p id="progress-display">Just beginning...</p>
+                    </div>
+                    
+                    <div class="quick-commands">
+                        <button class="quick-btn" onclick="game.processInput('look')">Look</button>
+                        <button class="quick-btn" onclick="game.processInput('inventory')">Inventory</button>
+                        <button class="quick-btn" onclick="game.processInput('help')">Help</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right page (main game text) -->
+            <div class="page page-right">
+                <div class="page-content">
+                    <div id="output-container" class="output-area">
+                        <!-- Game text appears here -->
+                    </div>
+                    
+                    <div class="input-area">
+                        <form id="command-form">
+                            <label for="command-input" class="sr-only">Enter command</label>
+                            <input 
+                                type="text" 
+                                id="command-input" 
+                                class="command-input" 
+                                placeholder="What do you do?"
+                                autocomplete="off"
+                                spellcheck="false"
+                            >
+                            <button type="submit" class="submit-btn">↵</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right book cover -->
+        <div class="book-cover book-cover-right"></div>
+    </div>
+    
+    <!-- Special mechanics overlay (for cipher, runes, etc) -->
+    <div id="mechanics-overlay" class="mechanics-overlay hidden">
+        <div class="mechanics-content">
+            <button class="close-overlay" onclick="game.closeOverlay()">✕</button>
+            <div id="mechanics-display"></div>
+        </div>
+    </div>
+    
+    <!-- Title screen -->
+    <div id="title-screen" class="title-screen">
+        <div class="title-content">
+            <h1 class="game-title">The Grimoire of<br>Eternal Vigil</h1>
+            <p class="game-subtitle">A Dark Fantasy Text Adventure</p>
+            <p class="game-credit">by georgeousDev</p>
+            
+            <button class="start-btn" onclick="game.startGame()">Begin Your Journey</button>
+            
+            <div class="title-options">
+                <button class="option-btn" onclick="game.loadGame()">Load Saved Game</button>
+                <button class="option-btn" onclick="game.showAbout()">About</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
